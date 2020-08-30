@@ -3,27 +3,45 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		8935FCFF24F5CFC00062B6CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8935FCFE24F5CFC00062B6CB /* AppDelegate.swift */; };
 		8935FD0124F5CFC00062B6CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8935FD0024F5CFC00062B6CB /* SceneDelegate.swift */; };
-		8935FD0324F5CFC00062B6CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8935FD0224F5CFC00062B6CB /* ViewController.swift */; };
+		8935FD0324F5CFC00062B6CB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8935FD0224F5CFC00062B6CB /* MainViewController.swift */; };
 		8935FD0624F5CFC00062B6CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8935FD0424F5CFC00062B6CB /* Main.storyboard */; };
 		8935FD0824F5CFC20062B6CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8935FD0724F5CFC20062B6CB /* Assets.xcassets */; };
 		8935FD0B24F5CFC20062B6CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8935FD0924F5CFC20062B6CB /* LaunchScreen.storyboard */; };
+		8935FD1324F5D5D30062B6CB /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8935FD1224F5D5D30062B6CB /* MenuViewController.swift */; };
+		8935FD1724F5ED460062B6CB /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8935FD1624F5ED460062B6CB /* MenuCell.swift */; };
+		894A2B5E24F6849500DA9038 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 894A2B5D24F6849500DA9038 /* Menu.storyboard */; };
+		894E7CA324F92654006AB3ED /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894E7CA224F92654006AB3ED /* MenuModel.swift */; };
+		894E7CA624F927D6006AB3ED /* MenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894E7CA524F927D6006AB3ED /* MenuPresenter.swift */; };
+		894E7CA824F9286C006AB3ED /* MenuViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894E7CA724F9286C006AB3ED /* MenuViewProtocols.swift */; };
+		899D38AE24FBD6000020232C /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899D38AD24FBD6000020232C /* UserDefaults.swift */; };
+		CD2D5421B7B0C62EC0A76BC1 /* Pods_Peretz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA38A36EFEEC2FCCE4E2ECE /* Pods_Peretz.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3CA38A36EFEEC2FCCE4E2ECE /* Pods_Peretz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Peretz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8935FCFB24F5CFC00062B6CB /* Peretz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Peretz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8935FCFE24F5CFC00062B6CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8935FD0024F5CFC00062B6CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8935FD0224F5CFC00062B6CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8935FD0224F5CFC00062B6CB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8935FD0524F5CFC00062B6CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8935FD0724F5CFC20062B6CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8935FD0A24F5CFC20062B6CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8935FD0C24F5CFC20062B6CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8935FD1224F5D5D30062B6CB /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		8935FD1624F5ED460062B6CB /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		894A2B5D24F6849500DA9038 /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
+		894E7CA224F92654006AB3ED /* MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
+		894E7CA524F927D6006AB3ED /* MenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPresenter.swift; sourceTree = "<group>"; };
+		894E7CA724F9286C006AB3ED /* MenuViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewProtocols.swift; sourceTree = "<group>"; };
+		899D38AD24FBD6000020232C /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		C29AC16000833768C6A64946 /* Pods-Peretz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Peretz.release.xcconfig"; path = "Target Support Files/Pods-Peretz/Pods-Peretz.release.xcconfig"; sourceTree = "<group>"; };
+		CB09B4E033A01CC4DA138DDA /* Pods-Peretz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Peretz.debug.xcconfig"; path = "Target Support Files/Pods-Peretz/Pods-Peretz.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +49,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD2D5421B7B0C62EC0A76BC1 /* Pods_Peretz.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D084812DB636C63A683ABC8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB09B4E033A01CC4DA138DDA /* Pods-Peretz.debug.xcconfig */,
+				C29AC16000833768C6A64946 /* Pods-Peretz.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8935FCF224F5CFC00062B6CB = {
 			isa = PBXGroup;
 			children = (
 				8935FCFD24F5CFC00062B6CB /* Peretz */,
 				8935FCFC24F5CFC00062B6CB /* Products */,
+				3D084812DB636C63A683ABC8 /* Pods */,
+				BC5EF96764F4C6B16EB9324D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +88,76 @@
 			children = (
 				8935FCFE24F5CFC00062B6CB /* AppDelegate.swift */,
 				8935FD0024F5CFC00062B6CB /* SceneDelegate.swift */,
-				8935FD0224F5CFC00062B6CB /* ViewController.swift */,
-				8935FD0424F5CFC00062B6CB /* Main.storyboard */,
+				899D38AD24FBD6000020232C /* UserDefaults.swift */,
+				894E7CA424F9279D006AB3ED /* Menu */,
+				899D38B224FBE0E80020232C /* Main */,
 				8935FD0724F5CFC20062B6CB /* Assets.xcassets */,
 				8935FD0924F5CFC20062B6CB /* LaunchScreen.storyboard */,
 				8935FD0C24F5CFC20062B6CB /* Info.plist */,
 			);
 			path = Peretz;
+			sourceTree = "<group>";
+		};
+		894E7CA424F9279D006AB3ED /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				899D38AF24FBE0B80020232C /* View */,
+				899D38B024FBE0C00020232C /* Presenter */,
+				899D38B124FBE0CD0020232C /* Model */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		899D38AF24FBE0B80020232C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				894A2B5D24F6849500DA9038 /* Menu.storyboard */,
+				8935FD1224F5D5D30062B6CB /* MenuViewController.swift */,
+				894E7CA724F9286C006AB3ED /* MenuViewProtocols.swift */,
+				8935FD1624F5ED460062B6CB /* MenuCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		899D38B024FBE0C00020232C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				894E7CA524F927D6006AB3ED /* MenuPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		899D38B124FBE0CD0020232C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				894E7CA224F92654006AB3ED /* MenuModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		899D38B224FBE0E80020232C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				899D38B324FBE0FD0020232C /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		899D38B324FBE0FD0020232C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8935FD0424F5CFC00062B6CB /* Main.storyboard */,
+				8935FD0224F5CFC00062B6CB /* MainViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC5EF96764F4C6B16EB9324D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CA38A36EFEEC2FCCE4E2ECE /* Pods_Peretz.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +167,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8935FD0F24F5CFC20062B6CB /* Build configuration list for PBXNativeTarget "Peretz" */;
 			buildPhases = (
+				348CAF02FEFF321F6CF4027F /* [CP] Check Pods Manifest.lock */,
 				8935FCF724F5CFC00062B6CB /* Sources */,
 				8935FCF824F5CFC00062B6CB /* Frameworks */,
 				8935FCF924F5CFC00062B6CB /* Resources */,
+				5689AA992BA86F9BFE114484 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,19 +223,68 @@
 				8935FD0B24F5CFC20062B6CB /* LaunchScreen.storyboard in Resources */,
 				8935FD0824F5CFC20062B6CB /* Assets.xcassets in Resources */,
 				8935FD0624F5CFC00062B6CB /* Main.storyboard in Resources */,
+				894A2B5E24F6849500DA9038 /* Menu.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		348CAF02FEFF321F6CF4027F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Peretz-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5689AA992BA86F9BFE114484 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Peretz/Pods-Peretz-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Peretz/Pods-Peretz-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Peretz/Pods-Peretz-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8935FCF724F5CFC00062B6CB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8935FD0324F5CFC00062B6CB /* ViewController.swift in Sources */,
+				894E7CA824F9286C006AB3ED /* MenuViewProtocols.swift in Sources */,
+				894E7CA324F92654006AB3ED /* MenuModel.swift in Sources */,
+				8935FD0324F5CFC00062B6CB /* MainViewController.swift in Sources */,
+				894E7CA624F927D6006AB3ED /* MenuPresenter.swift in Sources */,
+				8935FD1724F5ED460062B6CB /* MenuCell.swift in Sources */,
+				899D38AE24FBD6000020232C /* UserDefaults.swift in Sources */,
 				8935FCFF24F5CFC00062B6CB /* AppDelegate.swift in Sources */,
 				8935FD0124F5CFC00062B6CB /* SceneDelegate.swift in Sources */,
+				8935FD1324F5D5D30062B6CB /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +426,7 @@
 		};
 		8935FD1024F5CFC20062B6CB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB09B4E033A01CC4DA138DDA /* Pods-Peretz.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +445,7 @@
 		};
 		8935FD1124F5CFC20062B6CB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C29AC16000833768C6A64946 /* Pods-Peretz.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
