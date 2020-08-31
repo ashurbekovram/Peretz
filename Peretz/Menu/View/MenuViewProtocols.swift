@@ -21,11 +21,15 @@ extension MenuViewController: MenuViewProtocol {
     }
     
     func showLoading() {
-        
+        self.menuTableView.separatorStyle = .none
+        menuActivityIndicator.startAnimating()
+        menuActivityIndicator.isHidden = false
     }
     
     func hideLoading() {
-        
+        self.menuTableView.separatorStyle = .singleLine
+        menuActivityIndicator.stopAnimating()
+        menuActivityIndicator.isHidden = true
     }
     
 }
@@ -34,19 +38,14 @@ extension MenuViewController: MenuViewProtocol {
 extension MenuViewController: MenuCellButtonsProtocol {
     
     func plusFunc(index: Int, senderCell: MenuCell) {
-        print("PLUS")
+        senderCell.showCountKorzina()
         let countInCart = Korzina.shared.addToCart(item: menuItems[index])
-        if countInCart > 0 {
-            senderCell.countLabel.text = String(countInCart)
-            senderCell.showCountKorzina()
-        } else {
-            print("error")
-        }
+        senderCell.countLabel.text = String(countInCart)
+        self.showKorzinaView()
     }
     
     
     func minusFunc(index: Int, senderCell: MenuCell) {
-        print("MINUS")
         if Korzina.shared.isAddedToCart(item: menuItems[index]) {
             let countInCart = Korzina.shared.removeFromCart(item: menuItems[index])
             if countInCart > 0 {
@@ -55,21 +54,7 @@ extension MenuViewController: MenuCellButtonsProtocol {
                 senderCell.hideCountCorzina()
             }
         }
+        self.showKorzinaView()
     }
     
-}
-
-
-extension MenuViewController {
-    
-    func showKorzinaView1() {
-        let myFirstLabel = UILabel()
-        myFirstLabel.text = "I made a label on the screen #toogood4you"
-        myFirstLabel.font = UIFont(name: "MarkerFelt-Thin", size: 45)
-        myFirstLabel.textColor = UIColor.red
-        myFirstLabel.textAlignment = .center
-        myFirstLabel.numberOfLines = 5
-        myFirstLabel.frame = CGRect(x: 15, y: 54, width: 300, height: 500)
-        self.view.addSubview(myFirstLabel)
-    }
 }

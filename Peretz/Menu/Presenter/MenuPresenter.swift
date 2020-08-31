@@ -40,10 +40,10 @@ class MenuPresenter: MenuPresenterProtocol {
                 let resultArray = try? JSONDecoder().decode([MenuItem].self, from: resultJSON)
                 print(resultArray ?? "resultArray = nil")
                 self.view?.setMenuItems(items: resultArray ?? [])
+                self.view?.hideLoading()
             case .failure(let error):
                 print(error)
             }
-            self.view?.hideLoading()
         }
     }
     
