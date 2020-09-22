@@ -18,7 +18,12 @@ final class Korzina {
     static let shared = Korzina()
 
     private let key = "korzina_peretz"
-    private var menu: [KorzinaModel] = []
+    private var menu: [KorzinaModel] = [] {
+        didSet {
+            NotificationCenter.default.post(name: .showKorzinaKey, object: nil)
+        }
+        
+    }
     
     private init() {
         guard

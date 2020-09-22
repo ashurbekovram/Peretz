@@ -9,12 +9,17 @@
 import Foundation
 import UIKit
 
+
+
 protocol MenuViewProtocol {
     func setMenuItems(items: [MenuItem])
     func showLoading()
     func hideLoading()
 }
 
+
+
+// MARK: - Menu view protocol
 extension MenuViewController: MenuViewProtocol {
     func setMenuItems(items: [MenuItem]) {
         menuItems.append(contentsOf: items)
@@ -35,13 +40,14 @@ extension MenuViewController: MenuViewProtocol {
 }
 
 
+// MARK: - Cell buttons protocol
 extension MenuViewController: MenuCellButtonsProtocol {
     
     func plusFunc(index: Int, senderCell: MenuCell) {
         senderCell.showCountKorzina()
         let countInCart = Korzina.shared.addToCart(item: menuItems[index])
         senderCell.countLabel.text = String(countInCart)
-        self.showKorzinaView()
+        //self.showKorzinaView()
     }
     
     
@@ -54,7 +60,34 @@ extension MenuViewController: MenuCellButtonsProtocol {
                 senderCell.hideCountCorzina()
             }
         }
-        self.showKorzinaView()
+        //self.showKorzinaView()
     }
     
 }
+
+
+// MARK: - Korzina view protocol
+
+extension MenuViewController: KorzinaViewProtocol {
+    
+    
+    @objc func showKorzinaXib() {
+        korzinaViewXib.countAllCart()
+        
+        let allPrice = Korzina.shared.countAllPrice()
+        if allPrice > 0 {
+            self.korzinaBottom.constant = 0
+            UIView.animate(withDuration: 0.3) {
+                self.view.layoutIfNeeded()
+            }
+        } else {
+            self.korzinaBottom.constant = 100
+            UIView.animate(withDuration: 0.3) {
+                self.view.layoutIfNeeded()
+            }
+        }
+    }
+    
+    
+}
+

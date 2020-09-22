@@ -21,6 +21,8 @@ protocol MenuPresenterProtocol {
 
 class MenuPresenter: MenuPresenterProtocol {
     
+    private let service = MenuService()
+    
     // MARK: - init
     
     required init (view: MenuViewProtocol) {
@@ -33,18 +35,17 @@ class MenuPresenter: MenuPresenterProtocol {
     var view: MenuViewProtocol?
     
     func getMenuItems() {
+        
         self.view?.showLoading()
-        AF.request("https://peretz-group.ru/api/v2/products?category=93&key=47be9031474183ea92958d5e255d888e47bdad44afd5d7b7201d0eb572be5278").responseData { response in
-            switch response.result {
-            case .success(let resultJSON):
-                let resultArray = try? JSONDecoder().decode([MenuItem].self, from: resultJSON)
-                print(resultArray ?? "resultArray = nil")
-                self.view?.setMenuItems(items: resultArray ?? [])
-                self.view?.hideLoading()
-            case .failure(let error):
-                print(error)
-            }
-        }
+            
+        service.getDishs(onSuccess: { (items) in
+            self.view?.setMenuItems(items: items)
+            self.view?.hideLoading()
+        }, onFailure: { (error) in
+            
+        })
+        
+        
     }
     
 }

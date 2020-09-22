@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		890A970724FF904300C22AB7 /* MenuService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890A970624FF904300C22AB7 /* MenuService.swift */; };
 		8935FCFF24F5CFC00062B6CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8935FCFE24F5CFC00062B6CB /* AppDelegate.swift */; };
 		8935FD0124F5CFC00062B6CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8935FD0024F5CFC00062B6CB /* SceneDelegate.swift */; };
 		8935FD0324F5CFC00062B6CB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8935FD0224F5CFC00062B6CB /* MainViewController.swift */; };
@@ -19,12 +20,16 @@
 		894E7CA324F92654006AB3ED /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894E7CA224F92654006AB3ED /* MenuModel.swift */; };
 		894E7CA624F927D6006AB3ED /* MenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894E7CA524F927D6006AB3ED /* MenuPresenter.swift */; };
 		894E7CA824F9286C006AB3ED /* MenuViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894E7CA724F9286C006AB3ED /* MenuViewProtocols.swift */; };
+		895D86C624FE656D00F54A61 /* NotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895D86C524FE656D00F54A61 /* NotificationCenter.swift */; };
+		895D86C824FE668400F54A61 /* KorzinaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 895D86C724FE668400F54A61 /* KorzinaView.xib */; };
+		895D86CA24FE670A00F54A61 /* KorzinaViewClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895D86C924FE670A00F54A61 /* KorzinaViewClass.swift */; };
 		899D38AE24FBD6000020232C /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899D38AD24FBD6000020232C /* UserDefaults.swift */; };
 		CD2D5421B7B0C62EC0A76BC1 /* Pods_Peretz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA38A36EFEEC2FCCE4E2ECE /* Pods_Peretz.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3CA38A36EFEEC2FCCE4E2ECE /* Pods_Peretz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Peretz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		890A970624FF904300C22AB7 /* MenuService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuService.swift; sourceTree = "<group>"; };
 		8935FCFB24F5CFC00062B6CB /* Peretz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Peretz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8935FCFE24F5CFC00062B6CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8935FD0024F5CFC00062B6CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +44,9 @@
 		894E7CA224F92654006AB3ED /* MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
 		894E7CA524F927D6006AB3ED /* MenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPresenter.swift; sourceTree = "<group>"; };
 		894E7CA724F9286C006AB3ED /* MenuViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewProtocols.swift; sourceTree = "<group>"; };
+		895D86C524FE656D00F54A61 /* NotificationCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenter.swift; sourceTree = "<group>"; };
+		895D86C724FE668400F54A61 /* KorzinaView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KorzinaView.xib; sourceTree = "<group>"; };
+		895D86C924FE670A00F54A61 /* KorzinaViewClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KorzinaViewClass.swift; sourceTree = "<group>"; };
 		899D38AD24FBD6000020232C /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		C29AC16000833768C6A64946 /* Pods-Peretz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Peretz.release.xcconfig"; path = "Target Support Files/Pods-Peretz/Pods-Peretz.release.xcconfig"; sourceTree = "<group>"; };
 		CB09B4E033A01CC4DA138DDA /* Pods-Peretz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Peretz.debug.xcconfig"; path = "Target Support Files/Pods-Peretz/Pods-Peretz.debug.xcconfig"; sourceTree = "<group>"; };
@@ -89,6 +97,8 @@
 				8935FCFE24F5CFC00062B6CB /* AppDelegate.swift */,
 				8935FD0024F5CFC00062B6CB /* SceneDelegate.swift */,
 				899D38AD24FBD6000020232C /* UserDefaults.swift */,
+				895D86C524FE656D00F54A61 /* NotificationCenter.swift */,
+				895D86CB24FE67A800F54A61 /* KorzinaView */,
 				894E7CA424F9279D006AB3ED /* Menu */,
 				899D38B224FBE0E80020232C /* Main */,
 				8935FD0724F5CFC20062B6CB /* Assets.xcassets */,
@@ -106,6 +116,15 @@
 				899D38B124FBE0CD0020232C /* Model */,
 			);
 			path = Menu;
+			sourceTree = "<group>";
+		};
+		895D86CB24FE67A800F54A61 /* KorzinaView */ = {
+			isa = PBXGroup;
+			children = (
+				895D86C724FE668400F54A61 /* KorzinaView.xib */,
+				895D86C924FE670A00F54A61 /* KorzinaViewClass.swift */,
+			);
+			path = KorzinaView;
 			sourceTree = "<group>";
 		};
 		899D38AF24FBE0B80020232C /* View */ = {
@@ -131,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				894E7CA224F92654006AB3ED /* MenuModel.swift */,
+				890A970624FF904300C22AB7 /* MenuService.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -224,6 +244,7 @@
 				8935FD0824F5CFC20062B6CB /* Assets.xcassets in Resources */,
 				8935FD0624F5CFC00062B6CB /* Main.storyboard in Resources */,
 				894A2B5E24F6849500DA9038 /* Menu.storyboard in Resources */,
+				895D86C824FE668400F54A61 /* KorzinaView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,11 +299,14 @@
 			files = (
 				894E7CA824F9286C006AB3ED /* MenuViewProtocols.swift in Sources */,
 				894E7CA324F92654006AB3ED /* MenuModel.swift in Sources */,
+				890A970724FF904300C22AB7 /* MenuService.swift in Sources */,
 				8935FD0324F5CFC00062B6CB /* MainViewController.swift in Sources */,
+				895D86CA24FE670A00F54A61 /* KorzinaViewClass.swift in Sources */,
 				894E7CA624F927D6006AB3ED /* MenuPresenter.swift in Sources */,
 				8935FD1724F5ED460062B6CB /* MenuCell.swift in Sources */,
 				899D38AE24FBD6000020232C /* UserDefaults.swift in Sources */,
 				8935FCFF24F5CFC00062B6CB /* AppDelegate.swift in Sources */,
+				895D86C624FE656D00F54A61 /* NotificationCenter.swift in Sources */,
 				8935FD0124F5CFC00062B6CB /* SceneDelegate.swift in Sources */,
 				8935FD1324F5D5D30062B6CB /* MenuViewController.swift in Sources */,
 			);
